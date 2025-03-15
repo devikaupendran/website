@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* ------------- animation for the circle -----------  */
+
+@keyframes circleSlideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.circle-animation {
+  animation: circleSlideInFromRight 2s ease-out forwards;
+}
+
+.customCard {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px 2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0% 10%, 100% 10%, 100% 75%, 41% 75%, 51% 100%, 60% 75%, 0% 75%)
+}
